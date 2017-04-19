@@ -1,6 +1,7 @@
 .clock {
   border-radius: 50%;
-  background: #fff url(img/heartu.jpg) no-repeat center;
+  background: #fff url("img/clock.jpg");
+  background: no-repeat;
   background-size: 88%;
   height: 20em;
   padding-bottom: 31%;
