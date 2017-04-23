@@ -1,36 +1,25 @@
-function initLocalClocks() {
-  // Get the local time using JS
-  var date = new Date;
-  var seconds = date.getSeconds();
-  var minutes = date.getMinutes();
-  var hours = date.getHours();
+var secondHand = document.querySelector('.second-hand');
+var minuteHand = document.querySelector('.minute-hand');
+var hourHand = document.querySelector('.hour-hand');
+
+function setDate() {
+  // getting local time
+  var now = new Date();
+  var seconds = now.getSeconds();
+  var secondsDegrees = ((seconds / 60) * 360) + 90;
+  secondHand.style.transform = 'rotate(${secondsDegrees}deg)';
+    
+  var minutes = now.getMinutes();
+  var minutesDegrees = ((mins / 60) * 360) + 90;
+  minuteHand.style.transform = 'rotate(${minutesDegrees}deg)';
+  console.log(minutes);
+
+  var hours = now.getHours();
+  var hoursDegrees = ((minutes / 12) * 360) + 90;
+  hourHand.style.transform = 'rotate(${hoursDegrees}deg)';
+
+
 }
 
-var hands = [
-    {
-      hand: 'hours',
-      angle: (hours * 30) + (minutes / 2)
-    },
-    {
-      hand: 'minutes',
-      angle: (minutes * 6)
-    },
-    {
-      hand: 'seconds',
-      angle: (seconds * 6)
-    }
-];
 
-for (var j = 0; j < hands.length; j++) {
-    var elements = document.querySelectorAll('.' + hands[j].hand);
-    for (var k = 0; k < elements.length; k++) {
-        elements[k].style.webkitTransform = 'rotateZ('+ hands[j].angle +'deg)';
-        elements[k].style.transform = 'rotateZ('+ hands[j].angle +'deg)';
-        // If this is a minute hand, note the seconds position (to calculate minute position later)
-        if (hands[j].hand === 'minutes') {
-          elements[k].parentNode.setAttribute('data-second-angle', hands[j + 1].angle);
-        }
-    }
-  }
-  
-  
+setInterval(setDate, 1000);
