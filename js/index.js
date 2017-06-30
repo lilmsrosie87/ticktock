@@ -1,4 +1,4 @@
-var secondHand = document.querySelector('.second-hand');
+/* var secondHand = document.querySelector('.second-hand');
 var minuteHand = document.querySelector('.minute-hand');
 var hourHand = document.querySelector('.hour-hand');
 
@@ -9,8 +9,8 @@ function setDate() {
   var secondsDegrees = ((seconds / 60) * 360) + 90;
   secondHand.style.transform = 'rotate(${secondsDegrees}deg)';
     
-  var minutes = now.getMinutes();
-  var minutesDegrees = ((minutes / 60) * 360) + 90;
+  /* var minutes = now.getMinutes(); */
+/*   var minutesDegrees = ((minutes / 60) * 360) + 90;
  // minuteHand.style.transform = 'rotate(${minutesDegrees}deg)';
  console.log(minutes);
 
@@ -22,4 +22,4 @@ function setDate() {
 }
 
 
-setInterval(setDate, 1000);
+setInterval(setDate, 1000); */ 
