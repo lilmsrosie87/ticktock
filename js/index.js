@@ -1,3 +1,11 @@
+var currentTime = new Date ();
+var currentHours = currentTime.getHours ();
+var currentMinutes = currentTime.getMinutes ();
+var currentSeconds = currentTime.getSeconds ();
+
+currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes; 
+
+
 /* var secondHand = document.querySelector('.second-hand');
 var minuteHand = document.querySelector('.minute-hand');
 var hourHand = document.querySelector('.hour-hand');
