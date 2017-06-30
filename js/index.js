@@ -6,6 +6,7 @@ var currentSeconds = currentTime.getSeconds ();
 currentMinutes = ( currentMinutes < 10 ? "0" : "" ) + currentMinutes; 
 currentSeconds = (currentSeconds < 10 ? "0" : "" ) + currentSeconds;
 
+/* http://www.elated.com/articles/creating-a-javascript-clock/ */
 var timeOfDay = ( currentHours < 12 ) ? "AM" ; "PM";
 currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
 currentHours = ( currentHours == 0 ) ? 12 : currentHours; 
