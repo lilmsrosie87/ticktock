@@ -5,6 +5,8 @@ html {
 	font-size: 80px;
 }
 
-.span {
-    font-family: 'Audiowide', cursive
+#clock {
+    font-family: 'Audiowide', cursive;
+	border: 5px solid black;
+	padding: 5px;
 }
