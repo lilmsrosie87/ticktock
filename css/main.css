@@ -1,3 +1,7 @@
+. {
+	font-color: #FFF8DC;
+}
+
 html {
 	background:#018DED url(http://phoenixwave.com/wp-content/uploads/2014/12/mockingjay-featured1.jpg);
 	background-size:cover;
@@ -7,7 +11,7 @@ html {
 
 #clock {
     font-family: 'Audiowide', cursive;
-	font-color: ##FFF8DC;
+	color: #FFF8DC;
 	border: 5px solid white;
 	padding: 5px;
 }
