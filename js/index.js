@@ -1,6 +1,8 @@
+var today = new Date();
+
 
 function init (){
-	timeDisplay =document.createTextNode ( "");
+	timeDisplay = document.createTextNode ( "");
 	document.getElementById("clock").appendChild(timeDisplay);
 }
 
